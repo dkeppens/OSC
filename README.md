@@ -6,21 +6,21 @@ Contains :
 * My version of TP-Link's Omada Software Controller's 'control.sh' script linked as '/usr/bin/tpeap'
   A summary of the changes made :
 
-# - Increased compatibility with centralized account management solutions (NIS,LDAP,..)
-# - General reorganization of code structure by adding some new functions and renaming others
-# - Added looping to remove some duplicate code
-# - Standardized function return codes
-# - Clarified certain error mesages
-# - Corrected/added stdout/stderr redirections where applicable
-# - Colorized and changed output formatting
-# - Added separate section for user variables
-# - Improved checking of startup to not have to wait 5 minutes on immediate startup failure
-# - Added check for mongod dependency
-# - Added support for splitting startup logs by success/failure
-# - Forced stop kill is now based on PID_FILE
-# - Now checks for and ensures symbolic link presence to mongod binary before each startup
-# - Correction for unused CURL variable
-# - Status command now reports on transitional states
+ - Increased compatibility with centralized account management solutions (NIS,LDAP,..)
+ - General reorganization of code structure by adding some new functions and renaming others
+ - Added looping to remove some duplicate code
+ - Standardized function return codes
+ - Clarified certain error mesages
+ - Corrected/added stdout/stderr redirections where applicable
+ - Colorized and changed output formatting
+ - Added separate section for user variables
+ - Improved checking of startup to not have to wait 5 minutes on immediate startup failure
+ - Added check for mongod dependency
+ - Added support for splitting startup logs by success/failure
+ - Forced stop kill is now based on PID_FILE
+ - Now checks for and ensures symbolic link presence to mongod binary before each startup
+ - Correction for unused CURL variable
+ - Status command now reports on transitional states
 
 * A standalone systemd service file as a replacement for the old-style system-V init script with systemd-generator integration
   that OSC has been using so far, to handle OSC start/stop
