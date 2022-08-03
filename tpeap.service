@@ -1,0 +1,20 @@
+[Unit]
+Description=Omada Software Controller
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+Restart=on-failure
+TimeoutStartSec=5m
+TimeoutStopSec=1m
+IgnoreSIGPIPE=no
+KillMode=mixed
+GuessMainPID=no
+RemainAfterExit=yes
+SuccessExitStatus=0
+ExecStart=/usr/bin/tpeap start
+ExecStop=/usr/bin/tpeap stop
+
+[Install]
+WantedBy=multi-user.target
