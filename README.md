@@ -27,9 +27,6 @@ Contains :
    that OSC has been using so far, to handle OSC start/stop
   
 
-** (ARM 64 bit only) A text-file containing a Google Drive share-URL to download a gzipped tar archive containing the 'bin' dir contents that resulted from compiling      the mongodb-4.4.15 source code
-
-** (ARM 64 bit only) A gzipped tar archive containing the 'bin' dir contents that resulted from compiling the mongodb-4.4.15 source code
-  on Debian Bullseye (11) for aarch64/ARM architecture, since i could not find precompiled ARM versions anywhere, except for Ubuntu.
+** (ARM 64 bit only) A text-file containing a Google Drive share-URL to download a gzipped tar archive containing the 'bin' dir contents that resulted from compiling       the mongodb-4.4.15 source code on Debian Bullseye (11) for aarch64/ARM architecture, since i could not find precompiled ARM versions anywhere, except for Ubuntu.
   You should not need more than just to extract this into a directory of your choosing (e.g. /opt/mongodb).
   Unless of course, i'm mistaken in remembering that i compiled statically, in which case you'll have to do it yourself. Shit happens
